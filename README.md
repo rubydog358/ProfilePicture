@@ -1,10 +1,12 @@
 # ProfilePicture
-1. copy/paste the pde file from this repo into a new processing file
-1. save that file
-1. in the folder where that file is saved, create a new folder called "data"
-1. save the image file from this repo to your data folder
-1. fill in the blanks in the sketch. tinker until you have something that works.
-1. press the spacebar to toggle between your sketch and the source image.
+1. set up this sketch on your local machine. it has an image with it, so the process is a little different than usual:
+   - click the green `Clone or download` button from this repo main page
+   - click `download zip`
+   - unzip the file into your sketchbook folder (where you store your processing sketches)
+   - here is a visual of what things should look like (but with different file/folder names):
+   [img](https://raw.githubusercontent.com/WoodstockCS/cp/gh-pages/processing_folders.PNG)
+1. open the sketch and fill in the blanks (there are 5 blanks near the middle of the code). it will take some noodling to figure out what goes in the blanks.
+1. run the sketch, and press the spacebar to toggle between your sketch and the source image.
 1. time to make some changes and see what happens. run your sketch between each of these changes:
    - tinker with the cellSize and scale
    - comment out the `float size = ...` line and add a new line `float size = cellSize * scale * .8`, then adjust the `.8` a bit
