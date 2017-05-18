@@ -31,6 +31,9 @@ void draw() {
   if (showOriginal) {
     image(img, 0, 0, imgWidth * scale, imgHeight * scale);
   } else {
+    // start both of these loops at 0.
+    // one should run while its variable is less than imgHeight,
+    // and the other should run while its variable is less than imgWidth
     for(int y = ___; _________; y += cellSize) {
       for(int x = ___; _________; x += cellSize) { 
         color c = img.pixels[y*imgWidth+x];
