@@ -12,6 +12,7 @@ int imgWidth = 462;
 int imgHeight = 347;
 String txt ="According to all known laws of aviation, there is no way a bee should be able to fly.";
 int txtLength;
+int currentLetter;
 
 void settings() {
   size((int)(imgWidth * scale),(int)(imgHeight * scale));  
