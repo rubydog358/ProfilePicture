@@ -12,7 +12,9 @@
    - comment out the `float size = ...` line and add a new line `float size = cellSize * scale * .8`, then adjust the `.8` a bit
    - replace that `.8` (or whatever number you settled on) with `noise(x, y)`
    - comment out that `float size = ...` line and add a new line `float size = map(greyness, 0, 255, cellSize * scale, .5)`
-   - comment out the `ellipse(...)` line and add new lines: `textSize(cellSize * scale);` and `text(txt.charAt(currentLetter), xLoc, yLoc);`
+   - comment out the `ellipse(...)` line:
+     - add these lines: `textSize(cellSize * scale);` and `text(txt.charAt(currentLetter), xLoc, yLoc);`
+     - at the start of the inner loop (directly above `color c = ...`) add this line: `currentLetter = (currentLetter + 1) % txtLength;`
 1. save a picture of yourself (or a stand-in) in your data folder
 1. make the necessary changes to your code so that your picture is displayed instead of the bee:
    - change the `imageLoad` function call so it uses the filename of your picture
